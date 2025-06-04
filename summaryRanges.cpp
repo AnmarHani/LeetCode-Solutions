@@ -3,10 +3,7 @@ public:
     vector<string> summaryRanges(vector<int>& nums) {
         vector<string> result;
         if(nums.size() < 1) return result;
-        else if(nums.size() == 1) {
-            result.push_back(to_string(nums[0]));
-            return result;
-        }
+        else if (nums.size() == 1) return {to_string(nums[0])};
 
         int start = nums[0];
         size_t i = 0;
